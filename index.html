@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>VIATAhomebrew - Official Organization</title>
+ <link rel="stylesheet" href="style.css?v=6">
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+ 
+ <!-- Favicon -->
+ <link rel="icon" type="image/png" href="assets/favicon.png">
+ 
+ <!-- Meta Tags & Open Graph (Social Preview) -->
+ <meta name="description" content="VIATAhos is an operating system designed from the ground up to restore absolute digital control and independence to the community. It was born with a clear idea: to create a free, personal computing environment completely independent of the rules, tracking and trends of the major tech giants.">
+ <meta property="og:title" content="VIATAhomebrew - Official Organization">
+ <meta property="og:description" content="VIATAhos is an operating system designed from the ground up to restore absolute digital control and independence to the community. It was born with a clear idea: to create a free, personal computing environment completely independent of the rules, tracking and trends of the major tech giants.">
+ <meta property="og:image" content="https://VIATAhos.github.io/assets/favicon.png">
+ <meta property="og:url" content="https://VIATAhos.github.io/">
+ <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="lang-en-active">
+ <div class="synthwave-bg"></div>
+
+ <div id="header">
+ <div id="upperheader">
+ <div id="logo">
+ <a href="#">VIATAhomebrew</a>
+ </div>
+ <div class="header-controls">
+ <button class="lang-btn" onclick="setLang('it')">ITA</button>
+ <button class="lang-btn active" onclick="setLang('en')">ENG</button>
+ </div>
+ </div>
+ <div id="navbar">
+ <ul>
+ <li class="lang-it"><a href="#about">Filosofia</a></li>
+ <li class="lang-en"><a href="#about">Philosophy</a></li>
+ <li class="lang-it"><a href="#arch">Architettura</a></li>
+ <li class="lang-en"><a href="#arch">Architecture</a></li>
+ <li class="lang-it"><a href="#fs">File System</a></li>
+ <li class="lang-en"><a href="#fs">File System</a></li>
+ <li class="lang-it"><a href="#p2p">Rete P2P</a></li>
+ <li class="lang-en"><a href="#p2p">P2P Network</a></li>
+ <li class="lang-it"><a href="#hardware">Hardware</a></li>
+ <li class="lang-en"><a href="#hardware">Hardware</a></li>
+   <li class="lang-it"><a href="#gui">GUI</a></li>
+ <li class="lang-en"><a href="#gui">GUI</a></li>
+ <li class="lang-it"><a href="#repos">Repository</a></li>
+ <li class="lang-en"><a href="#repos">Repository</a></li>
+ <li class="lang-it"><a href="#contribute">Sicurezza</a></li>
+ <li class="lang-en"><a href="#contribute">Security</a></li>
+ <li class="lang-it"><a href="#donate">Donazioni</a></li>
+ <li class="lang-en"><a href="#donate">Donations</a></li>
+ </ul>
+ </div>
+
+ <div class="card header-card">
+ <h1 class="header-h1">VIATAhos</h1>
+ <p class="lang-it main-subtitle">
+ Il sistema operativo homebrew, indipendente e a misura d'uomo.
+ </p>
+ <p class="lang-en main-subtitle">
+ The independently developed, human-driven, homebrew operating system.
+ </p>
+ <div class="action-buttons">
+ <a href="https://github.com/VIATAhos" target="_blank" class="action-btn">
+ <strong>[ REPOSITORIES ]</strong>
+ <span class="lang-it">Esplora il codice sorgente</span>
+ <span class="lang-en">Explore the source code</span>
+ </a>
+ </div>
+ </div> 
+ </div>
+
+ <!-- WHAT IS VIATAHOS / PHILOSOPHY -->
+ <div id="about" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">La Nostra Visione Anti-UNIX</h2>
+ <h2 class="section-title lang-en">Our Anti-UNIX Vision</h2>
+ 
+ <div class="card-grid">
+ <div class="card">
+ <h3 class="lang-it">Cos'è VIATAhos?</h3>
+ <h3 class="lang-en">What is VIATAhos?</h3>
+ <div class="lang-it">
+ <p>VIATAhos è un sistema operativo progettato da zero per restituire il controllo digitale assoluto e l'indipendenza alla comunità.</p>
+ <p class="mt-1">Nasce con un'idea chiara: creare un ambiente di calcolo personale, libero e completamente slegato dalle regole, dai tracciamenti e dalle mode dei grandi colossi del web.</p>
+ </div>
+ <div class="lang-en">
+ <p>VIATAhos is an operating system designed from the ground up to restore absolute digital control and independence to the community.</p>
+ <p class="mt-1">It was born with a clear idea: to create a free, personal computing environment completely independent of the rules, tracking and trends of the major tech giants.</p>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="lang-it">Spirito anni '80/'90 (Anti-UNIX)</h3>
+ <h3 class="lang-en">'80s/'90s Spirit (Anti-UNIX)</h3>
+ <div class="lang-it">
+ <p>Rifiutiamo la standardizzazione del software moderno. In VIATAhos le risorse hardware non sono mascherate come file sotto <code>/dev</code>, non esiste il <code>mount</code> e non c'è una root astratta <code>/</code>.</p>
+ <p class="mt-1">Ci ispiriamo alla filosofia di AmigaOS (Workbench) e Windows 3.x. In quell'età dell'oro, il computer era uno strumento familiare. Portiamo quella semplicità nelle moderne architetture.</p>
+ </div>
+ <div class="lang-en">
+ <p>We reject the standardization of modern software. In VIATAhos, hardware resources are not masked as files under <code>/dev</code>, there is no <code>mount</code>, and no abstract root <code>/</code>.</p>
+ <p class="mt-1">We are inspired by the philosophy of AmigaOS (Workbench) and Windows 3.x. In that golden age, the computer was a familiar tool. We bring that simplicity to modern architectures.</p>
+ </div>
+ </div>
+ </div>
+
+ <hr class="neon-hr">
+
+ <!-- ARCHITECTURE -->
+ <div id="arch" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">Architettura e Gestione Memoria</h2>
+ <h2 class="section-title lang-en">Architecture and Memory Management</h2>
+ 
+ <div class="card-grid">
+ <div class="card">
+ <h3 class="lang-it">Kernel e Architetture (x64, x86, ARM)</h3>
+ <h3 class="lang-en">Kernel and Architectures (x64, x86, ARM)</h3>
+ <div class="lang-it">
+ <p>Il kernel è scritto in C puro e Assembly. Aggiriamo le astrazioni forzate dei BIOS/UEFI moderni, comunicando direttamente con l'hardware.</p>
+ <p class="mt-1">Sviluppiamo per architetture <strong>64-bit, 32-bit legacy e ARM a basso consumo</strong> per ridare vita a vecchi computer e supportare single-board computer economici.</p>
+ </div>
+ <div class="lang-en">
+ <p>The kernel is written in pure C and Assembly. We bypass the forced abstractions of modern BIOS/UEFI, communicating directly with the hardware.</p>
+ <p class="mt-1">We develop across <strong>64-bit, legacy 32-bit, and low-power ARM</strong> architectures to breathe new life into older computers and support affordable single-board computers.</p>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="lang-it">Ring 0 & Flat Memory</h3>
+ <h3 class="lang-en">Ring 0 & Flat Memory</h3>
+ <div class="lang-it">
+ <p>VIATAhos rifiuta la complessa parcellizzazione dei moderni SO commerciali.</p>
+ <p class="mt-1">Funziona interamente in modalità <strong>Ring 0</strong> (privilegi kernel totali). Le applicazioni eseguite con privilegi amministrativi ottengono l'accesso diretto e senza filtri alla RAM e alle porte I/O in un modello di <strong>memoria piatta lineare (Flat Memory Model)</strong>.</p>
+ </div>
+ <div class="lang-en">
+ <p>VIATAhos rejects the complex compartmentalization of modern commercial OSs.</p>
+ <p class="mt-1">It runs entirely in <strong>Ring 0</strong> mode (full kernel privileges). Applications run with administrative privileges get direct, unfiltered access to RAM and I/O ports in a <strong>linear Flat Memory Model</strong>.</p>
+ </div>
+ </div>
+ </div>
+
+ <hr class="neon-hr">
+
+ <!-- FILE SYSTEM & DRIVES -->
+ <div id="fs" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">Gerarchia Drive e File System</h2>
+ <h2 class="section-title lang-en">Drive Hierarchy and File System</h2>
+ 
+ <div class="card-grid">
+ <div class="card">
+ <h3 class="lang-it">Gerarchia Reale (Drive da A: a F:)</h3>
+ <h3 class="lang-en">Real Hierarchy (Drives A: to F:)</h3>
+ <div class="lang-it">
+ <p>Il prompt mostra il disco selezionato e la modalità Admin. VIATAhos mostra la reale separazione fisica tramite storiche lettere di drive, rispecchiando la vera struttura della macchina:</p>
+ <ul class="custom-list mt-1">
+ <li><strong>A:</strong> Floppy Disk (OS Protetto in R/O)</li>
+ <li><strong>B:</strong> Ottico (CD/DVD/Blu-Ray)</li>
+ <li><strong>C:</strong> Rimovibile (USB/SD)</li>
+ <li><strong>D:</strong> Fisso (HDD/SSD/NVMe)</li>
+ <li><strong>E:</strong> Nastro (Tape)</li>
+ <li><strong>F:</strong> Virtuale (RAM Disk)</li>
+ </ul>
+ </div>
+ <div class="lang-en">
+ <p>The prompt shows the selected disk and Admin mode. VIATAhos shows real physical separation through historic drive letters, reflecting the machine's true structure:</p>
+ <ul class="custom-list mt-1">
+ <li><strong>A:</strong> Floppy Disk (Protected OS in R/O)</li>
+ <li><strong>B:</strong> Optical (CD/DVD/Blu-Ray)</li>
+ <li><strong>C:</strong> Removable (USB/SD)</li>
+ <li><strong>D:</strong> Fixed (HDD/SSD/NVMe)</li>
+ <li><strong>E:</strong> Tape</li>
+ <li><strong>F:</strong> Virtual (RAM Disk)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="lang-it">File Tipizzati & Metadati ibridi</h3>
+ <h3 class="lang-en">Typed Files & Hybrid Metadata</h3>
+ <div class="lang-it">
+ <p>L'estensione determina in modo assoluto come il Kernel gestisce il file. Non esistono file"magicamente eseguibili" tramite flag nascosti.</p>
+ <ul class="custom-list mt-1">
+ <li><strong>.xep</strong> - Eseguibili binari in RAM.</li>
+ <li><strong>.kvbn</strong> - Script di sistema (Batch).</li>
+ <li><strong>.vlib</strong> - Librerie dinamiche.</li>
+ <li><strong>.smol</strong> - Compressione LZ77 trasparente.</li>
+ </ul>
+ <p class="mt-1">I file restano standard FAT32. I metadati e permessi sono salvati in <strong>File Ombra</strong> nella cartella nascosta <code>\.viata\</code>, garantendo 100% Plug & Play con Windows/Linux.</p>
+ </div>
+ <div class="lang-en">
+ <p>The extension absolutely determines how the Kernel handles the file. There are no"magically executable" files via hidden flags.</p>
+ <ul class="custom-list mt-1">
+ <li><strong>.xep</strong> - Binary executables in RAM.</li>
+ <li><strong>.kvbn</strong> - System scripts (Batch).</li>
+ <li><strong>.vlib</strong> - Dynamic libraries.</li>
+ <li><strong>.smol</strong> - Transparent LZ77 compression.</li>
+ </ul>
+ <p class="mt-1">Files remain standard FAT32. Metadata and permissions are saved in <strong>Shadow Files</strong> in the hidden <code>\.viata\</code> folder, guaranteeing 100% Plug & Play with Windows/Linux.</p>
+ </div>
+ </div>
+ </div>
+
+ <hr class="neon-hr">
+
+ <!-- P2P NETWORK -->
+ <div id="p2p" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">Rete P2P Decentralizzata</h2>
+ <h2 class="section-title lang-en">Decentralized P2P Network</h2>
+ 
+ <div class="card-grid">
+ <div class="card">
+ <h3 class="lang-it">VIATAshare (Prossimità)</h3>
+ <h3 class="lang-en">VIATAshare (Proximity)</h3>
+ <div class="lang-it">
+ <p>Condivisione file offline, diretta e senza intermediari.</p>
+ <p class="mt-1">VIATAshare permette di scambiare dati e file tra dispositivi nelle vicinanze in modo completamente slegato da internet, usando tecnologie di prossimità per una libertà assoluta.</p>
+ </div>
+ <div class="lang-en">
+ <p>Offline, direct file sharing with no intermediaries.</p>
+ <p class="mt-1">VIATAshare allows you to exchange data and files between nearby devices completely independent of the internet, using proximity technologies for absolute freedom.</p>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="lang-it">VIATAlink (Rete Globale)</h3>
+ <h3 class="lang-en">VIATAlink (Global Network)</h3>
+ <div class="lang-it">
+ <p>Il networking è decentralizzato. Slegato dai server Cloud corporativi.</p>
+ <p class="mt-1">VIATAlink è una rete P2P (DHT) basata su chiavi crittografiche pubbliche. Permette telefonate VoIP cifrate E2E, messaggi e condivisione file a distanza in totale sicurezza.</p>
+ </div>
+ <div class="lang-en">
+ <p>Networking is decentralized. Unbound from corporate Cloud servers.</p>
+ <p class="mt-1">VIATAlink is a P2P network (DHT) based on public cryptographic keys. It enables E2E encrypted VoIP calls, messages, and remote file sharing in total security.</p>
+ </div>
+ </div>
+ </div>
+
+ <hr class="neon-hr">
+
+ <!-- ECOSYSTEM & ACTIVISM -->
+ <div id="hardware" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">L'Ecosistema Hardware e il Territorio</h2>
+ <h2 class="section-title lang-en">The Hardware Ecosystem and Territory</h2>
+ 
+ <div class="card-grid">
+ <div class="card">
+ <h3 class="lang-it">L'Ecosistema VIATA</h3>
+ <h3 class="lang-en">The VIATA Ecosystem</h3>
+ <div class="lang-it">
+ <p>La vera essenza del progetto è il recupero (Right to Repair):</p>
+ <ul class="custom-list mt-1">
+ <li><strong>VIATAstation:</strong> Laptop storici e ThinkPad salvati dalle discariche, resuscitati con VIATAhos per ridare velocità.</li>
+ <li><strong>VIATAconnected:</strong> Cellulari feature-phone e dispositivi ARM modificati per far girare il core VIATAhos come terminali di comunicazione P2P non tracciabili.</li>
+ </ul>
+ </div>
+ <div class="lang-en">
+ <p>The true essence of the project is recovery (Right to Repair):</p>
+ <ul class="custom-list mt-1">
+ <li><strong>VIATAstation:</strong> Historic laptops and ThinkPads saved from landfills, resurrected with VIATAhos to restore speed.</li>
+ <li><strong>VIATAconnected:</strong> Feature phones and ARM devices modified to run the VIATAhos core as untrackable P2P communication terminals.</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="lang-it">Radici a Villar San Costanzo</h3>
+ <h3 class="lang-en">Roots in Villar San Costanzo</h3>
+ <div class="lang-it">
+ <p>Le nostre idee si muovono fisicamente anche fuori dallo schermo, raggiungendo le strade di <strong>Villar San Costanzo (Cuneo, Italia)</strong>.</p>
+ <p class="mt-1">Attraverso attivismo faccia a faccia, magliette comunitarie e campagne di adesivi locali, connettiamo l'antica tradizione rurale dell'"aggiustare ciò che si ha" con il moderno Right to Repair.</p>
+ </div>
+ <div class="lang-en">
+ <p>Our ideas also move physically outside the screen, reaching the streets of <strong>Villar San Costanzo (Cuneo, Italy)</strong>.</p>
+ <p class="mt-1">Through face-to-face activism, community t-shirts and local sticker campaigns, we connect the old rural tradition of"fixing what you have" with the modern Right to Repair.</p>
+ </div>
+ </div>
+ </div>
+
+ <hr class="neon-hr">
+
+ <!-- GUI ROADMAP / GALLERY -->
+ <div id="gui" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">Roadmap Interfaccia: T-CORE e GUI Nativa</h2>
+ <h2 class="section-title lang-en">Interface Roadmap: T-CORE and Native GUI</h2>
+ <div class="card">
+ 
+ <div class="lang-it mb-1">
+ <p><strong>T-CORE (TUI Multitasking):</strong> L'utente può premere i tasti da F1 a F12 per passare istantaneamente tra 12 sessioni di terminale indipendenti.</p>
+ <p>L'obiettivo finale del progetto, però, è puramente visivo (comando <code>tsi</code>). Guarda in anteprima il nostro window manager nativo che richiama lo stile AmigaOS o Windows 3.x. Finestre bisellate 3D e pattern in pixel art per una massima fluidità:</p>
+ </div>
+ <div class="lang-en mb-1">
+ <p><strong>T-CORE (TUI Multitasking):</strong> The user can press F1 through F12 to instantly switch between 12 independent terminal sessions.</p>
+ <p>The ultimate goal, however, is purely visual (<code>tsi</code> command). Preview our native window manager recalling AmigaOS or Windows 3.x style. 3D beveled windows and pixel art patterns for maximum fluidity:</p>
+ </div>
+
+ <div class="gallery-grid" class="gallery-grid-flex">
+ <div class="gallery-item" class="gallery-item-wrapper" onclick="openModal(this)">
+ <img src="assets/gui_1.png" alt="T-CORE Terminal Network Init" class="gallery-img">
+ <div class="gallery-caption lang-it">Inizializzazione Rete Bare-Metal in finestra T-CORE.</div>
+ <div class="gallery-caption lang-en">Bare-Metal Network Init in a T-CORE window.</div>
+ </div>
+ <div class="gallery-item" class="gallery-item-wrapper" onclick="openModal(this)">
+ <img src="assets/gui_2.png" alt="Calculator App" class="gallery-img">
+ <div class="gallery-caption lang-it">L'app Calculator nativa sulla GUI VIATAhos.</div>
+ <div class="gallery-caption lang-en">The native Calculator app on the VIATAhos GUI.</div>
+ </div>
+ <div class="gallery-item" class="gallery-item-wrapper" onclick="openModal(this)">
+ <img src="assets/gui_3.png" alt="Minesweeper" class="gallery-img">
+ <div class="gallery-caption lang-it">Minesweeper funzionante con Window Manager a 32-bit.</div>
+ <div class="gallery-caption lang-en">Minesweeper running with the 32-bit Window Manager.</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- REPOSITORIES SECTION -->
+ <div id="repos" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it text-center">I Nostri Repository</h2>
+ <h2 class="section-title lang-en text-center">Our Repositories</h2>
+
+ <div class="repo-scroll-container">
+ <!-- VIATAhos -->
+ <div class="repo-item">
+ <div>
+ <h4>VIATAhos</h4>
+ <p class="lang-it">Il codice sorgente principale del kernel, bootloader e moduli x86/x64/ARM.</p>
+ <p class="lang-en">The main source code of the kernel, bootloader, and x86/x64/ARM modules.</p>
+ </div>
+ <a href="https://github.com/VIATAhos/VIATAhos" target="_blank" class="action-btn"><strong>[ CODE ]</strong></a>
+ </div>
+ 
+ <!-- .github -->
+ <div class="repo-item">
+ <div>
+ <h4>.github</h4>
+ <p class="lang-it">Documentazione organizzativa, regole di contribuzione, policy e by.txt.</p>
+ <p class="lang-en">Organizational documentation, contributing rules, policies, and by.txt.</p>
+ </div>
+ <a href="https://github.com/VIATAhos/.github" target="_blank" class="action-btn"><strong>[ CODE ]</strong></a>
+ </div>
+
+ <!-- VIATAhos.github.io -->
+ <div class="repo-item">
+ <div>
+ <h4>VIATAhos.github.io</h4>
+ <p class="lang-it">Il codice sorgente di questo sito web ufficiale.</p>
+ <p class="lang-en">The source code of this official website.</p>
+ </div>
+ <a href="https://github.com/VIATAhos/VIATAhos.github.io" target="_blank" class="action-btn"><strong>[ CODE ]</strong></a>
+ </div>
+ </div>
+ 
+ <hr class="neon-hr">
+
+ <!-- CONTRIBUTING & SECURITY -->
+ <div id="contribute" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">Contribuire a VIATAhos & Sicurezza</h2>
+ <h2 class="section-title lang-en">Contributing to VIATAhos & Security</h2>
+
+ <div class="card-grid">
+ <div class="card">
+ <h3 class="lang-it">Regole di Contribuzione (by.txt)</h3>
+ <h3 class="lang-en">Contribution Rules (by.txt)</h3>
+ <div class="lang-it">
+ <p>Qualsiasi aiuto nello scrivere il kernel o i moduli futuri è prezioso. Ma abbiamo una regola fondamentale:</p>
+ <ul class="custom-list mt-1">
+ <li>Devi inserire il tuo nome nel file <strong>by.txt</strong> alla radice della repository.</li>
+ <li>Le Pull Request senza la firma nel <code>by.txt</code> non verranno accettate, per mantenere trasparenza sulla paternità.</li>
+ <li>Tutto il codice è e resterà sotto licenza <strong>GNU GPL v3</strong>. Chiudere il codice non è permesso.</li>
+ </ul>
+ </div>
+ <div class="lang-en">
+ <p>Any help in writing the kernel or future modules is invaluable. But we have a fundamental rule:</p>
+ <ul class="custom-list mt-1">
+ <li>You must include your name in the <strong>by.txt</strong> file at the root of the repository.</li>
+ <li>Pull Requests without a signature in <code>by.txt</code> will not be accepted, to maintain transparency regarding authorship.</li>
+ <li>All code is and will remain under the <strong>GNU GPL v3</strong> license. Closing the code is not permitted.</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="lang-it">Policy di Sicurezza Kernel</h3>
+ <h3 class="lang-en">Kernel Security Policy</h3>
+ <div class="lang-it">
+ <p>Essendo un OS sviluppato interamente da zero, la stabilità a basso livello è cruciale. Se trovi una vulnerabilità critica nel Kernel o falle nella gestione memoria:</p>
+ <ul class="custom-list mt-1">
+ <li><strong>Non aprire Issue pubbliche</strong> che potrebbero compromettere i test degli altri utenti.</li>
+ <li>Contatta i manager privatamente usando la feature di reporting confidenziale su GitHub.</li>
+ </ul>
+ </div>
+ <div class="lang-en">
+ <p>As a fully homegrown OS, low-level stability is crucial. If you find a critical Kernel vulnerability or memory management flaws:</p>
+ <ul class="custom-list mt-1">
+ <li><strong>Do not open public Issues</strong> that could compromise other users' testing.</li>
+ <li>Contact the managers privately using the confidential reporting feature on GitHub.</li>
+ </ul>
+ </div>
+ </div>
+ 
+ <div class="card">
+ <h3 class="lang-it">Il Nostro Team</h3>
+ <h3 class="lang-en">Our Team</h3>
+ <div class="lang-it">
+ <p>Ideato da <strong>AQUIL the eagle</strong>, gestito come collettivo familiare.</p>
+ <p class="mt-1"><strong>Sei uno sviluppatore in zona?</strong> Ti vogliamo nel team!</p>
+ <a href="mailto:cirnueduard@yahoo.com" class="action-btn">
+ <strong>cirnueduard@yahoo.com</strong>
+ </a>
+ </div>
+ <div class="lang-en">
+ <p>Created by <strong>AQUIL the eagle</strong>, run as a family collective.</p>
+ <p class="mt-1"><strong>Are you a developer nearby?</strong> We want you in our team!</p>
+ <a href="mailto:cirnueduard@yahoo.com" class="action-btn">
+ <strong>cirnueduard@yahoo.com</strong>
+ </a>
+ </div>
+ </div>
+ </div>
+
+ <!-- NEW DONATION CARD (FULL WIDTH) -->
+ <div id="donate" class="scroll-anchor"></div>
+ <h2 class="section-title lang-it">Sostieni il Progetto</h2>
+ <h2 class="section-title lang-en">Support the Project</h2>
+ <div class="card">
+ <div class="lang-it">
+ <p>VIATAhos è gratuito, open source e sviluppato senza alcun tipo di finanziamento esterno o pubblicità.</p>
+ <p class="mt-1">Se ami la nostra visione Anti-UNIX e vuoi supportare le spese per l'hardware, considera di supportarci!</p>
+ </div>
+ <div class="lang-en">
+ <p>VIATAhos is free, open source, and developed without any external funding or advertising.</p>
+ <p class="mt-1">If you love our Anti-UNIX vision and want to support our hardware expenses, consider supporting us!</p>
+ </div>
+ 
+ <div class="action-buttons">
+ <!-- Ko-fi -->
+ <a href="https://ko-fi.com/viatahomebrew" target="_blank" class="action-btn">
+ <strong>Ko-fi</strong>
+ <span class="lang-it">Fai una donazione su Ko-fi</span>
+ <span class="lang-en">Make a donation on Ko-fi</span>
+ </a>
+ 
+ <!-- PayPal OpenSource -->
+ <a href="https://paypal.me/VIATAhomebrew" target="_blank" class="action-btn">
+ <strong>PayPal</strong>
+ <span class="lang-it">Supportaci su PayPal.Me</span>
+ <span class="lang-en">Support us on PayPal.Me</span>
+ </a>
+ </div>
+ </div>
+ </main>
+
+ <footer id="footer">
+ <div class="badges">
+ <img src="https://cyber.dabamos.de/88x31/netscape4.gif" alt="Netscape Now!">
+ <img src="https://cyber.dabamos.de/88x31/ie4.gif" alt="Internet Explorer">
+ <img src="https://cyber.dabamos.de/88x31/notepad.gif" alt="Made with Notepad">
+ </div>
+ 
+
+ <p class="lang-it">Sito Ufficiale dell'Organizzazione VIATAhomebrew &copy; 2026. Rilasciato sotto licenza GNU GPL v3.</p>
+ <p class="lang-en">VIATAhomebrew Official Organization Website &copy; 2026. Released under GNU GPL v3.</p>
+ </footer>
+
+ <script>
+ function setLang(lang) {
+ document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+ if (lang === 'it') {
+ document.querySelector('.lang-btn[onclick="setLang(\'it\')"]').classList.add('active');
+ document.body.className = 'lang-it-active';
+ } else {
+ document.querySelector('.lang-btn[onclick="setLang(\'en\')"]').classList.add('active');
+ document.body.className = 'lang-en-active';
+ }
+ }
+ </script>
+
+ <!-- Modal for Fullscreen Images -->
+ <div id="imageModal" id="imageModal" class="modal-overlay" onclick="closeModal()">
+ <img id="modalImg" class="modal-img">
+ <div id="modalCaption" class="modal-caption"></div>
+ </div>
+
+ <script>
+ function openModal(element) {
+ var modal = document.getElementById("imageModal");
+ var img = element.querySelector("img");
+ var captionEn = element.querySelector(".gallery-caption.lang-en");
+ var captionIt = element.querySelector(".gallery-caption.lang-it");
+ 
+ var modalImg = document.getElementById("modalImg");
+ var modalCaption = document.getElementById("modalCaption");
+ 
+ modal.style.display ="flex";
+ modalImg.src = img.src;
+ 
+ // Show appropriate caption based on active language
+ var isIt = document.body.classList.contains("lang-it-active");
+ modalCaption.innerText = isIt ? captionIt.innerText : captionEn.innerText;
+ }
+
+ function closeModal() {
+ document.getElementById("imageModal").style.display ="none";
+ }
+ </script>
+
+</body>
+</html>
